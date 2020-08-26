@@ -1,6 +1,8 @@
 /*eslint-disable*/
 import React from "react";
 
+import Picture from "../Firebase/Picture"
+
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
@@ -37,12 +39,16 @@ function IndexHeader() {
             <img
               alt="..."
               className="n-logo"
-              src={require("assets/img/now-logo.png")}
+              src={require("assets/img/ravens.jpg")}
             ></img>
-            <h1 className="h1-seo">Now UI Kit.</h1>
-            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+            <h1 className="h1-seo">Lorem Ipsum</h1>
+            <h3>Lorem Ipsum</h3>
+          <Picture />
           </div>
+          
         </Container>
+        
+
       </div>
     </>
   );

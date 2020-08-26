@@ -10,8 +10,6 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Carousel from "./index-sections/Carousel.js";
-
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -29,9 +27,6 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
-        <div className="main">
-          <Carousel />
-        </div>
         <DarkFooter />
       </div>
     </>

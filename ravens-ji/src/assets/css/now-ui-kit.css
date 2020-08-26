@@ -3951,7 +3951,9 @@ img {
   height: 125vh; }
   .index-page .page-header .container > .content-center {
     top: 37%; }
-  .index-page .page-header .category-absolute {
+    .index-page .page-header .container > .content-bottom {
+      top: 63%; }  
+    .index-page .page-header .category-absolute {
     position: absolute;
     top: 100vh;
     margin-top: -60px;
