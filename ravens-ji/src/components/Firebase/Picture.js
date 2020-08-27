@@ -66,14 +66,13 @@ class Picture extends Component {
     }));
   };
 
-
   //pathReference = firebase.storage.ref('images/');
 
   render() {
     console.log(this.state.username)
     return (
       <div>
-        <Col lg="3" sm="6">
+        <Col lg="12" sm="12">
           <FormGroup>
             <Input
               defaultValue=""
@@ -86,7 +85,7 @@ class Picture extends Component {
           </FormGroup>
         </Col>
         <br />
-        <label style={{ backgroundColor: 'steelblue', color: 'white', padding: 10, borderRadius: 4, cursor: 'pointer' }}>
+        <label style={{ backgroundColor: 'purple', color: 'white', padding: 10, borderRadius: 4, cursor: 'pointer' }}>
           Upload your Pic's
     <FileUploader
             hidden
@@ -100,9 +99,14 @@ class Picture extends Component {
           />
         </label>
         <br />
+        <br />
         <div>
           {this.state.downloadURLs.map((downloadURL, i) => {
-            return <img key={i} src={downloadURL} />;
+            return <img key={i} 
+                        width="75" 
+                        height="75"
+                        src={downloadURL} 
+                    />;
           })}
         </div>
       </div>

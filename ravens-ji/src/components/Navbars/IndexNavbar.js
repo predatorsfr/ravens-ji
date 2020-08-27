@@ -1,13 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 // reactstrap components
 import {
+  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
@@ -52,16 +48,22 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              target="_blank"
-              id="navbar-brand"
-            >
-              lorem ipsum
-            </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              lorem ipsum
-            </UncontrolledTooltip>
-            <button
+          <Button
+                  className="nav-link btn-neutral"
+                  color="info"
+                  href="#pablo"
+                  id="rules"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <p>Règles</p>
+                </Button>
+                <UncontrolledTooltip target="#rules">
+                Bienvenue à tous, vous pouvez envoyer sur ce site vos photos réalisés lors de la journée afin de valider le badge de l'amitié.
+                N'oubliez pas les 3 contraintes photos : prendre une photo de groupe avec un sbire de la team rocket, une autre avec un roux cool et pour finir prendre une photo avec votre APE. 
+                Vous aurez  jusqu’à 17h pour envoyer toutes vos photo, alors ne perdez pas trop de temps !
+                A vos marque, prêts ? Cheese !
+                </UncontrolledTooltip>
+           <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
                 document.documentElement.classList.toggle("nav-open");
@@ -82,33 +84,39 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink>
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>lorem ipsum </p>
-                </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={(e) => e.preventDefault()}
+                <NavLink
+                  href="https://www.facebook.com/bde.epitech"
+                  target="_blank"
+                  id="facebook-tooltip"
                 >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>lorem ipsum</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    lorem ipsum
-                  </DropdownItem>
-                  <DropdownItem>
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    lorem ipsum
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+                  <img
+                  width="80" 
+                  height="80"
+                    src={require("assets/img/facebook.png")}
+                  ></img>
+                   <p className="d-lg-none d-xl-none">Facebook</p>
+                </NavLink>
+                <UncontrolledTooltip target="#facebook-tooltip">
+                  Like us on Facebook
+                </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="https://www.instagram.com/bde.epitech/"
+                  target="_blank"
+                  id="instagram-tooltip"
+                >
+                  <img
+                  width="75" 
+                  height="75"
+                    src={require("assets/img/insta.png")}
+                  ></img>
+                  <p className="d-lg-none d-xl-none">Instagram</p>
+                </NavLink>
+                <UncontrolledTooltip target="#instagram-tooltip">
+                  Follow us on Instagram
+                </UncontrolledTooltip>
+              </NavItem>
               
             </Nav>
           </Collapse>

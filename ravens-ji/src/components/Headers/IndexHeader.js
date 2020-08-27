@@ -26,11 +26,11 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" filter-color="black">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/header.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/fjord.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -39,10 +39,10 @@ function IndexHeader() {
             <img
               alt="..."
               className="n-logo"
-              src={require("assets/img/ravens.jpg")}
+              src={require("assets/img/ravens.png")}
             ></img>
-            <h1 className="h1-seo">Lorem Ipsum</h1>
-            <h3>Lorem Ipsum</h3>
+            <h1 className="h1-seo">Defis Badge Amitié</h1>
+            <h3></h3>
           <Picture />
           </div>
           

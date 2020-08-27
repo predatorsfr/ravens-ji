@@ -12,13 +12,15 @@ function DarkFooter() {
           <ul>
             <li>
               <a
+              href="https://github.com/predatorsfr"
                 target="_blank"
               >
-                lorem ipsum
+                Predatorsfr ©
               </a>
             </li>
             <li>
               <a
+              href="https://www.epitech.eu/fr/vie-associative/"
                 target="_blank"
               >
                 About Us

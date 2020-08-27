@@ -3,6 +3,7 @@
   "version": "1.4.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "firebase": "^7.19.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
