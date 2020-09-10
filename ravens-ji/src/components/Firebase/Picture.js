@@ -52,6 +52,7 @@ class Picture extends Component {
   /////Upload
 
   handleUploadSuccess = async filename => {
+    alert("Your Pic's has been uplaoded")
     const downloadURL = await firebase
       .storage()
       .ref(this.state.name + "/") // user / filetype
@@ -85,12 +86,41 @@ class Picture extends Component {
           </FormGroup>
         </Col>
         <br />
-        <label style={{ backgroundColor: 'purple', color: 'white', padding: 10, borderRadius: 4, cursor: 'pointer' }}>
-          Upload your Pic's
+        <label style={{ backgroundColor: 'purple', color: 'white', padding: 10, borderRadius: 4, cursor: 'pointer',marginRight: 50,marginLeft:50 }}>
+          Upload your #TeamRocket Pic's
     <FileUploader
             hidden
             accept="image/*"
-            storageRef={firebase.storage().ref(this.state.name + "/")}
+            filename = {this.state.name}
+            storageRef={firebase.storage().ref("#TeamRocket/")}
+            onUploadStart={this.handleUploadStart}
+            onUploadError={this.handleUploadError}
+            onUploadSuccess={this.handleUploadSuccess}
+            onProgress={this.handleProgress}
+            multiple
+          />
+        </label>
+        <label style={{ backgroundColor: 'purple', color: 'white', padding: 10, borderRadius: 4, cursor: 'pointer',marginRight: 50,marginLeft:50 }}>
+          Upload your #Rouxcool Pic's 
+    <FileUploader
+            hidden
+            accept="image/*"
+            filename = {this.state.name}
+            storageRef={firebase.storage().ref("#Rouxcool/")}
+            onUploadStart={this.handleUploadStart}
+            onUploadError={this.handleUploadError}
+            onUploadSuccess={this.handleUploadSuccess}
+            onProgress={this.handleProgress}
+            multiple
+          />
+        </label>
+        <label style={{ backgroundColor: 'purple', color: 'white', padding: 10, borderRadius: 4, cursor: 'pointer',marginRight: 50,marginLeft:50 }}>
+          Upload your #Dresseurs Pic's 
+    <FileUploader
+            hidden
+            accept="image/*"
+            filename = {this.state.name}
+            storageRef={firebase.storage().ref("#Dresseurs/")}
             onUploadStart={this.handleUploadStart}
             onUploadError={this.handleUploadError}
             onUploadSuccess={this.handleUploadSuccess}
@@ -109,7 +139,7 @@ class Picture extends Component {
                     />;
           })}
         </div>
-      </div>
+        </div>
     );
   }
 }
