@@ -41,7 +41,7 @@ function IndexHeader() {
               className="n-logo"
               src={require("assets/img/ravens.png")}
             ></img>
-            <h1 className="h1-seo">Defis Badge Amitié</h1>
+            <h1 className="h1-seo" style={{color:"#774060"}}>Defis Badge Amitié</h1>
             <h3></h3>
           <Picture />
           </div>

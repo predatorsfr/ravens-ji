@@ -43,7 +43,7 @@ class Picture extends Component {
   ////USER
 
   handleChangename = event => this.setState({ name: event.target.value });
-  handleUploadStart = () => this.setState({ isUploading: true, progress: 0 });
+  handleUploadStart = () => { this.setState({ isUploading: true, progress: 0 })};
   handleProgress = progress => this.setState({ progress });
   handleUploadError = error => {
     this.setState({ isUploading: false });
@@ -76,12 +76,14 @@ class Picture extends Component {
         <Col lg="12" sm="12">
           <FormGroup>
             <Input
+            style={{backgroundColor:"white" }}
               defaultValue=""
               value={this.state.name}
               onChange={this.handleChangename}
               name="uname"
-              placeholder="Team Name"
+              placeholder="Team Number"
               type="text"
+              required
             ></Input>
           </FormGroup>
         </Col>
