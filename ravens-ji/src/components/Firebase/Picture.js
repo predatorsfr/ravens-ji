@@ -81,7 +81,7 @@ class Picture extends Component {
               value={this.state.name}
               onChange={this.handleChangename}
               name="uname"
-              placeholder="Team Number"
+              placeholder="First enter your Team Number then Upload your Pic's"
               type="text"
               required
             ></Input>
@@ -99,6 +99,7 @@ class Picture extends Component {
             onUploadError={this.handleUploadError}
             onUploadSuccess={this.handleUploadSuccess}
             onProgress={this.handleProgress}
+            disabled={this.state.name === "" ? true : false }
             multiple
           />
         </label>
@@ -113,6 +114,7 @@ class Picture extends Component {
             onUploadError={this.handleUploadError}
             onUploadSuccess={this.handleUploadSuccess}
             onProgress={this.handleProgress}
+            disabled={this.state.name === "" ? true : false }
             multiple
           />
         </label>
@@ -127,6 +129,7 @@ class Picture extends Component {
             onUploadError={this.handleUploadError}
             onUploadSuccess={this.handleUploadSuccess}
             onProgress={this.handleProgress}
+            disabled={this.state.name === "" ? true : false }
             multiple
           />
         </label>
