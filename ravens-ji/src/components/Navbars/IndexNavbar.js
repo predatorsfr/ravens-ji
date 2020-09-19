@@ -58,10 +58,7 @@ function IndexNavbar() {
                   <p>Règles</p>
                 </Button>
                 <UncontrolledTooltip target="#rules">
-                Bienvenue à tous, vous pouvez envoyer sur ce site vos photos réalisés lors de la journée.
-                N'oubliez pas les 3 contraintes photos : prendre une photo de groupe avec un sbire de la team rocket, une autre avec un roux cool et pour finir prendre une photo avec votre APE. 
-                Vous aurez  jusqu’à 17h pour envoyer toutes vos photo, alors ne perdez pas trop de temps !
-                A vos marque, prêts ? Cheese !Bienvenue à tous, vous pouvez envoyer sur ce site vos photos réalisés lors de la journée. N'oubliez pas les 3 contraintes photos : Prendre une photo de groupe avec un membre de la Team Rocket, une autre avec un rouxcool et pour finir une photo d'équipe original. 
+                Bienvenue à tous, vous pouvez envoyer sur ce site vos photos réalisés lors de la journée. N'oubliez pas les 3 contraintes photos : Prendre une photo de groupe avec un membre de la Team Rocket, une autre avec un rouxcool et pour finir une photo d'équipe original. 
                 Vous aurez jusqu’à 17h pour envoyer toutes vos photo, alors ne perdez pas trop de temps !
                 A vos marque, prêts ? Cheese
                 </UncontrolledTooltip>
